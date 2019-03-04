@@ -1,0 +1,25 @@
+<template>
+   <lightning-layout multiple-rows='true'>
+         <lightning-layout-item size='7'>
+            <lightning-layout multiple-rows='true'>
+               <lightning-layout-item size='12' class="slds-p-around_xxx-small">
+                  <c-search-bar></c-search-bar>
+               </lightning-layout-item>
+               <lightning-layout-item size='12' class="slds-p-around_xxx-small">
+                  <c-boats-list boats={boats}></c-boats-list>
+               </lightning-layout-item>
+            </lightning-layout>
+         </lightning-layout-item>
+         <lightning-layout-item size='5'>
+               <lightning-layout multiple-rows='true'>
+                  <lightning-layout-item size='12' class="slds-p-around_xxx-small">
+                     <c-boat-detail boat={boat} picture={pictureUrl}></c-boat-detail>
+                  </lightning-layout-item>
+                  <lightning-layout-item size='12' class="slds-p-around_xxx-small">
+                     <c-boat-location location={boatLocation} zoom-level={zoomLevel}></c-boat-location>
+                  </lightning-layout-item>
+               </lightning-layout>
+         </lightning-layout-item>
+   </lightning-layout>
+   <!-- <div class="root"></div> -->
+</template>

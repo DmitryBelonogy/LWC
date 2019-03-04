@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+            "c/boat-detail": [
+                "boatDetail/boatDetail.js"
+            ],
+            "c/boat-location": [
+                "boatLocation/boatLocation.js"
+            ],
+            "c/boat-preview": [
+                "boatPreview/boatPreview.js"
+            ],
+            "c/boats-list": [
+                "boatsList/boatsList.js"
+            ],
+            "c/pubsub": [
+                "pubsub/pubsub.js"
+            ],
+            "c/search-bar": [
+                "searchBar/searchBar.js"
+            ]
+        }
+    },
+    "include": [
+        "**/*",
+        "../../../../.sfdx/typings/lwc/**/*.d.ts"
+    ]
+}

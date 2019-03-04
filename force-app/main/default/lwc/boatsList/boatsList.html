@@ -1,0 +1,11 @@
+<template>
+   <lightning-card  title="Boats">
+      <lightning-layout multiple-rows="true">
+         <template for:each={boats} for:item="boat">
+            <lightning-layout-item key={boat.Id} size="4" padding="around-small">
+               <c-boat-preview boat={boat}></c-boat-preview>
+            </lightning-layout-item>
+         </template>
+      </lightning-layout>
+   </lightning-card>
+</template>

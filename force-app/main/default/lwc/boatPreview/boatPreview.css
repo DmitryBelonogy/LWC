@@ -1,0 +1,21 @@
+.boatPreviewContainer {
+   position: relative;
+   height: 150px;
+   background: rgb(179, 179, 179);
+   overflow: hidden;
+}
+
+.popUp {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   display: block;
+   height: 30%;
+   width: 100%;
+   background: rgba(58, 58, 58, 0.658);
+   color: white;
+   font-size: 1.2em;
+   padding-top: 10px;
+   font-weight: bold;
+   text-align: center;
+}

@@ -1,0 +1,25 @@
+<template>
+   <template if:true={boat}>
+      <lightning-card  variant="Narrow"  title={boat.Name} icon-name="custom:custom88">
+         <lightning-layout multiple-rows='true'>
+               <lightning-layout-item size='6'>
+                  <p class="slds-p-horizontal_small">Type: {boat.Boat_type__c}</p><br>
+                  <p class="slds-p-horizontal_small">Description</p>
+                  <p class="slds-p-horizontal_small">{boat.Description__c}</p><br>
+                  <p class="slds-p-horizontal_small">Build year</p>
+                  <p class="slds-p-horizontal_small">{boat.Year_build__c}</p>
+               </lightning-layout-item>
+               <lightning-layout-item size='6'>
+                     <lightning-layout multiple-rows='true'>
+                        <lightning-layout-item size='12'>
+                           <lightning-button label="Full Detail" title="Full Detail" onclick={navigateToPage} class="slds-m-left_x-small"></lightning-button>
+                        </lightning-layout-item>
+                        <lightning-layout-item size='12' padding="around-small">
+                           <img src={picture} alt="picture">
+                        </lightning-layout-item>
+                     </lightning-layout>
+               </lightning-layout-item>
+         </lightning-layout>
+      </lightning-card>
+   </template>
+</template>

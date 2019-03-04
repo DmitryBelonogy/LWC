@@ -1,0 +1,7 @@
+<template>
+   <lightning-card  title="Location">
+      <template if:true={location}>
+         <lightning-map  map-markers={location} zoom-level={zoomLevel}></lightning-map>
+      </template>
+   </lightning-card>
+</template>

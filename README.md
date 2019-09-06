@@ -11,5 +11,3 @@
 ## Presentation
 
 [Lightning Web Component](https://slides.com/dima_bel/lightning-web-components)
-
-
